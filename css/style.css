@@ -104,9 +104,9 @@ img {
 
     justify-content:space-between;
 
-    padding:0 70px;
+    padding:0 55px;
 
-    gap:30px;
+    gap:25px;
 
 }
 
@@ -131,11 +131,9 @@ img {
 
 
 
-
-
 .brand-logo {
 
-    width:280px;
+    width:320px;
 
     height:auto;
 
@@ -158,7 +156,7 @@ img {
 
     align-items:center;
 
-    gap:35px;
+    gap:32px;
 
 }
 
@@ -249,13 +247,13 @@ img {
 
     padding:
 
-    80px 70px;
+    70px 55px;
 
     display:flex;
 
     align-items:center;
 
-    gap:50px;
+    gap:45px;
 
 }
 
@@ -400,7 +398,7 @@ img {
 
     background:white;
 
-    padding:70px;
+    padding:70px 55px;
 
 }
 
@@ -565,7 +563,7 @@ img {
 
     padding:
 
-    35px 70px;
+    35px 55px;
 
     background:
 
@@ -623,7 +621,7 @@ img {
 
         padding:
 
-        0 35px;
+        0 30px;
 
     }
 
@@ -631,7 +629,7 @@ img {
 
     .brand-logo {
 
-        width:230px;
+        width:250px;
 
     }
 
@@ -639,7 +637,7 @@ img {
 
     .nav-links {
 
-        gap:20px;
+        gap:18px;
 
     }
 
@@ -649,7 +647,7 @@ img {
 
         padding:
 
-        60px 35px;
+        60px 30px;
 
         gap:30px;
 
@@ -669,7 +667,7 @@ img {
 
         padding:
 
-        50px 35px;
+        50px 30px;
 
     }
 
@@ -707,7 +705,7 @@ img {
 
     .brand-logo {
 
-        width:230px;
+        width:240px;
 
     }
 
