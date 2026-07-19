@@ -93,7 +93,7 @@ img {
 
 .navbar {
 
-    height:80px;
+    height:100px;
 
     background:
     var(--dark-navy);
@@ -107,6 +107,81 @@ img {
     padding:0 45px;
 
     gap:25px;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+
+
+
+/* ==========================================================
+   NAVBAR BLUE SOFT GLOW - OPTION 2
+========================================================== */
+
+
+.navbar::after {
+
+    content:"";
+
+    position:absolute;
+
+    bottom:0;
+
+    left:0;
+
+    width:100%;
+
+    height:2px;
+
+    background:
+
+    linear-gradient(
+        90deg,
+        transparent,
+        #0EA5E9,
+        #38BDF8,
+        #0EA5E9,
+        transparent
+    );
+
+    box-shadow:
+
+    0 0 12px
+    rgba(14,165,233,0.8);
+
+    animation:
+
+    headerGlow 4s ease-in-out infinite;
+
+}
+
+
+
+@keyframes headerGlow {
+
+    0% {
+
+        opacity:0.45;
+
+    }
+
+
+    50% {
+
+        opacity:1;
+
+    }
+
+
+    100% {
+
+        opacity:0.45;
+
+    }
 
 }
 
@@ -133,7 +208,7 @@ img {
 
 .brand-logo {
 
-    width:290px;
+    width:320px;
 
     height:auto;
 
@@ -619,6 +694,8 @@ img {
 
     .navbar {
 
+        height:90px;
+
         padding:
 
         0 30px;
@@ -629,7 +706,7 @@ img {
 
     .brand-logo {
 
-        width:250px;
+        width:260px;
 
     }
 
@@ -698,6 +775,14 @@ img {
         20px;
 
         gap:20px;
+
+    }
+
+
+
+    .navbar::after {
+
+        height:2px;
 
     }
 
