@@ -31,6 +31,7 @@
 }
 
 
+
 /* ==========================================================
    GLOBAL
 ========================================================== */
@@ -45,6 +46,7 @@
     box-sizing:border-box;
 
 }
+
 
 
 body {
@@ -63,11 +65,13 @@ body {
 }
 
 
+
 a {
 
     text-decoration:none;
 
 }
+
 
 
 img {
@@ -101,7 +105,116 @@ img {
 }
 
 
-.logo {
+
+/* ==========================================================
+   APPSEELFHUB BRAND LOGO - B1-C PREMIUM GLASS STYLE
+========================================================== */
+
+
+.brand {
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+}
+
+
+
+.brand-icon {
+
+    width:48px;
+
+    height:42px;
+
+    position:relative;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    filter:
+    drop-shadow(
+        0 0 10px
+        rgba(34,197,94,0.45)
+    );
+
+}
+
+
+
+.brand-layer {
+
+    position:absolute;
+
+    height:10px;
+
+    border-radius:5px;
+
+    background:
+    linear-gradient(
+        90deg,
+        #86EFAC,
+        #22C55E,
+        #14532D
+    );
+
+    box-shadow:
+
+    0 4px 8px
+    rgba(0,0,0,0.35);
+
+}
+
+
+
+.layer-one {
+
+    width:24px;
+
+    top:2px;
+
+}
+
+
+
+.layer-two {
+
+    width:34px;
+
+    top:15px;
+
+}
+
+
+
+.layer-three {
+
+    width:44px;
+
+    top:28px;
+
+}
+
+
+
+.brand-text {
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+
+
+.brand-name {
 
     color:white;
 
@@ -109,16 +222,38 @@ img {
 
     font-weight:700;
 
+    line-height:1;
+
 }
 
 
-.logo span {
+
+.brand-name span {
 
     color:
     var(--bright-green);
 
 }
 
+
+
+.brand-tagline {
+
+    color:#CBD5E1;
+
+    font-size:11px;
+
+    margin-top:5px;
+
+    letter-spacing:0.4px;
+
+}
+
+
+
+/* ==========================================================
+   NAVIGATION LINKS
+========================================================== */
 
 
 .nav-links {
@@ -130,6 +265,7 @@ img {
 }
 
 
+
 .nav-links a {
 
     color:#E2E8F0;
@@ -139,6 +275,7 @@ img {
     font-weight:600;
 
 }
+
 
 
 .nav-links a:hover {
@@ -169,6 +306,7 @@ img {
     font-weight:600;
 
 }
+
 
 
 .download-btn:hover {
@@ -210,11 +348,13 @@ img {
 }
 
 
+
 .hero-left {
 
     width:45%;
 
 }
+
 
 
 .hero-right {
@@ -236,12 +376,14 @@ img {
 }
 
 
+
 .hero h1 span {
 
     color:
     var(--bright-green);
 
 }
+
 
 
 .hero p {
@@ -255,9 +397,6 @@ img {
     margin-bottom:35px;
 
 }
-
-
-
 /* ==========================================================
    HERO BUTTONS
 ========================================================== */
@@ -315,6 +454,7 @@ img {
     border-radius:18px;
 
     box-shadow:
+
     0 20px 50px
     rgba(0,0,0,0.4);
 
@@ -336,6 +476,7 @@ img {
 }
 
 
+
 .section-title {
 
     text-align:center;
@@ -347,12 +488,14 @@ img {
 }
 
 
+
 .section-title span {
 
     color:
     var(--bright-green);
 
 }
+
 
 
 .section-subtitle {
@@ -399,10 +542,12 @@ img {
     flex:1;
 
     box-shadow:
+
     0 8px 20px
     rgba(0,0,0,0.05);
 
 }
+
 
 
 .app-card:hover {
@@ -424,6 +569,7 @@ img {
 .featured {
 
     border:
+
     2px solid
     var(--bright-green);
 
@@ -434,9 +580,11 @@ img {
 .badge {
 
     background:
+
     var(--green-light);
 
     color:
+
     var(--dark-green);
 
     padding:5px 12px;
@@ -477,9 +625,11 @@ img {
     padding:35px 70px;
 
     background:
+
     #F0FDF4;
 
 }
+
 
 
 .feature-item {
@@ -498,6 +648,7 @@ img {
 .footer {
 
     background:
+
     var(--dark-navy);
 
     color:white;
