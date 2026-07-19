@@ -104,7 +104,7 @@ img {
 
     justify-content:space-between;
 
-    padding:0 50px;
+    padding:0 45px;
 
     gap:25px;
 
@@ -133,7 +133,7 @@ img {
 
 .brand-logo {
 
-    width:250px;
+    width:290px;
 
     height:auto;
 
@@ -247,7 +247,7 @@ img {
 
     padding:
 
-    65px 50px;
+    65px 45px;
 
     display:flex;
 
@@ -629,7 +629,7 @@ img {
 
     .brand-logo {
 
-        width:220px;
+        width:250px;
 
     }
 
@@ -705,7 +705,7 @@ img {
 
     .brand-logo {
 
-        width:220px;
+        width:230px;
 
     }
 
