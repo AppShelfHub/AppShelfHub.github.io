@@ -78,6 +78,8 @@ img {
 
     max-width:100%;
 
+    display:block;
+
 }
 
 
@@ -89,7 +91,7 @@ img {
 
 .navbar {
 
-    height:80px;
+    min-height:80px;
 
     background:
     var(--dark-navy);
@@ -102,12 +104,14 @@ img {
 
     padding:0 70px;
 
+    gap:30px;
+
 }
 
 
 
 /* ==========================================================
-   APPSEELFHUB BRAND LOGO - B1-C PREMIUM GLASS STYLE
+   APPSEELFHUB BRAND LOGO
 ========================================================== */
 
 
@@ -119,86 +123,29 @@ img {
 
     gap:14px;
 
+    flex-shrink:0;
+
 }
 
 
 
-.brand-icon {
+/* Real Logo Image */
 
-    width:48px;
 
-    height:42px;
+.brand-logo {
 
-    position:relative;
+    width:62px;
 
-    display:flex;
+    height:62px;
 
-    flex-direction:column;
-
-    justify-content:center;
-
-    align-items:center;
+    object-fit:contain;
 
     filter:
+
     drop-shadow(
-        0 0 10px
+        0 0 12px
         rgba(34,197,94,0.45)
     );
-
-}
-
-
-
-.brand-layer {
-
-    position:absolute;
-
-    height:10px;
-
-    border-radius:5px;
-
-    background:
-    linear-gradient(
-        90deg,
-        #86EFAC,
-        #22C55E,
-        #14532D
-    );
-
-    box-shadow:
-
-    0 4px 8px
-    rgba(0,0,0,0.35);
-
-}
-
-
-
-.layer-one {
-
-    width:24px;
-
-    top:2px;
-
-}
-
-
-
-.layer-two {
-
-    width:34px;
-
-    top:15px;
-
-}
-
-
-
-.layer-three {
-
-    width:44px;
-
-    top:28px;
 
 }
 
@@ -224,6 +171,8 @@ img {
 
     line-height:1;
 
+    white-space:nowrap;
+
 }
 
 
@@ -243,9 +192,11 @@ img {
 
     font-size:11px;
 
-    margin-top:5px;
+    margin-top:6px;
 
     letter-spacing:0.4px;
+
+    white-space:nowrap;
 
 }
 
@@ -259,6 +210,8 @@ img {
 .nav-links {
 
     display:flex;
+
+    align-items:center;
 
     gap:35px;
 
@@ -294,7 +247,9 @@ img {
 
 .download-btn {
 
-    border:1px solid
+    border:
+
+    1px solid
     var(--bright-green);
 
     color:white;
@@ -304,6 +259,8 @@ img {
     border-radius:8px;
 
     font-weight:600;
+
+    white-space:nowrap;
 
 }
 
@@ -328,6 +285,7 @@ img {
 .hero {
 
     background:
+
     linear-gradient(
         135deg,
         #020617,
@@ -337,6 +295,7 @@ img {
     color:white;
 
     padding:
+
     80px 70px;
 
     display:flex;
@@ -397,6 +356,9 @@ img {
     margin-bottom:35px;
 
 }
+
+
+
 /* ==========================================================
    HERO BUTTONS
 ========================================================== */
@@ -405,6 +367,7 @@ img {
 .primary-btn {
 
     background:
+
     var(--bright-green);
 
     color:white;
@@ -417,19 +380,25 @@ img {
 
     margin-right:15px;
 
+    display:inline-block;
+
 }
 
 
 
 .secondary-btn {
 
-    border:1px solid white;
+    border:
+
+    1px solid white;
 
     color:white;
 
     padding:15px 28px;
 
     border-radius:8px;
+
+    display:inline-block;
 
 }
 
@@ -438,12 +407,10 @@ img {
 .primary-btn:hover {
 
     background:
+
     #16A34A;
 
 }
-
-
-
 /* ==========================================================
    WINSYSHELP IMAGE
 ========================================================== */
@@ -545,6 +512,8 @@ img {
 
     0 8px 20px
     rgba(0,0,0,0.05);
+
+    transition:0.3s;
 
 }
 
@@ -658,5 +627,256 @@ img {
     padding:25px;
 
     font-size:14px;
+
+}
+
+
+
+
+
+/* ==========================================================
+   TABLET RESPONSIVE DESIGN
+========================================================== */
+
+
+@media (max-width:1024px) {
+
+
+    .navbar {
+
+        padding:0 35px;
+
+    }
+
+
+
+    .nav-links {
+
+        gap:20px;
+
+    }
+
+
+
+    .hero {
+
+        padding:60px 35px;
+
+        gap:30px;
+
+    }
+
+
+
+    .hero h1 {
+
+        font-size:42px;
+
+    }
+
+
+
+    .apps-section {
+
+        padding:50px 35px;
+
+    }
+
+
+}
+
+
+
+
+
+/* ==========================================================
+   MOBILE RESPONSIVE DESIGN
+========================================================== */
+
+
+@media (max-width:768px) {
+
+
+
+    .navbar {
+
+        flex-direction:column;
+
+        height:auto;
+
+        padding:25px 20px;
+
+        gap:20px;
+
+    }
+
+
+
+    .brand {
+
+        justify-content:center;
+
+    }
+
+
+
+    .brand-logo {
+
+        width:55px;
+
+        height:55px;
+
+    }
+
+
+
+    .brand-name {
+
+        font-size:22px;
+
+    }
+
+
+
+    .brand-tagline {
+
+        font-size:10px;
+
+    }
+
+
+
+    .nav-links {
+
+        flex-direction:column;
+
+        gap:15px;
+
+        text-align:center;
+
+    }
+
+
+
+    .download-btn {
+
+        width:100%;
+
+        text-align:center;
+
+    }
+
+
+
+
+
+    .hero {
+
+        flex-direction:column;
+
+        padding:45px 20px;
+
+        text-align:center;
+
+    }
+
+
+
+    .hero-left,
+    .hero-right {
+
+        width:100%;
+
+    }
+
+
+
+    .hero h1 {
+
+        font-size:36px;
+
+    }
+
+
+
+    .hero p {
+
+        font-size:16px;
+
+    }
+
+
+
+    .primary-btn,
+    .secondary-btn {
+
+        width:100%;
+
+        margin:8px 0;
+
+        text-align:center;
+
+    }
+
+
+
+    .hero-image {
+
+        margin-top:25px;
+
+    }
+
+
+
+
+
+    .apps-section {
+
+        padding:45px 20px;
+
+    }
+
+
+
+    .section-title {
+
+        font-size:30px;
+
+    }
+
+
+
+    .apps-container {
+
+        flex-direction:column;
+
+    }
+
+
+
+
+
+    .features {
+
+        flex-direction:column;
+
+        align-items:center;
+
+        gap:20px;
+
+        padding:30px 20px;
+
+        text-align:center;
+
+    }
+
+
+
+    .footer {
+
+        padding:20px;
+
+    }
+
 
 }
