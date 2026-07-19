@@ -93,7 +93,7 @@ img {
 
 .navbar {
 
-    min-height:95px;
+    height:80px;
 
     background:
     var(--dark-navy);
@@ -104,7 +104,7 @@ img {
 
     justify-content:space-between;
 
-    padding:0 55px;
+    padding:0 50px;
 
     gap:25px;
 
@@ -133,7 +133,7 @@ img {
 
 .brand-logo {
 
-    width:320px;
+    width:250px;
 
     height:auto;
 
@@ -202,7 +202,7 @@ img {
 
     padding:
 
-    12px 22px;
+    11px 22px;
 
     border-radius:8px;
 
@@ -247,7 +247,7 @@ img {
 
     padding:
 
-    70px 55px;
+    65px 50px;
 
     display:flex;
 
@@ -398,7 +398,7 @@ img {
 
     background:white;
 
-    padding:70px 55px;
+    padding:70px 50px;
 
 }
 
@@ -563,7 +563,7 @@ img {
 
     padding:
 
-    35px 55px;
+    35px 50px;
 
     background:
 
@@ -629,7 +629,7 @@ img {
 
     .brand-logo {
 
-        width:250px;
+        width:220px;
 
     }
 
@@ -647,7 +647,7 @@ img {
 
         padding:
 
-        60px 30px;
+        55px 30px;
 
         gap:30px;
 
@@ -691,11 +691,11 @@ img {
 
         flex-direction:column;
 
-        min-height:auto;
+        height:auto;
 
         padding:
 
-        25px 20px;
+        20px;
 
         gap:20px;
 
@@ -705,7 +705,7 @@ img {
 
     .brand-logo {
 
-        width:240px;
+        width:220px;
 
     }
 
