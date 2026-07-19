@@ -1,595 +1,864 @@
-<!DOCTYPE html>
-<html lang="en">
+/* ==========================================================
+   AppShelfHub Website Style
+   Professional Software Landing Page
+========================================================== */
 
-<head>
 
-<meta charset="UTF-8">
+/* ==========================================================
+   ROOT COLORS
+========================================================== */
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+:root {
 
-<title>AppShelfHub | Simple Apps. Smarter Solutions.</title>
+    --dark-navy: #020617;
 
-<link rel="stylesheet" href="css/style.css">
+    --dark-green: #14532D;
 
-</head>
+    --bright-green: #22C55E;
 
+    --green-light: #DCFCE7;
 
-<body>
+    --white: #FFFFFF;
 
+    --light-bg: #F8FAFC;
 
-<!-- ==================================================
-     NAVBAR
-================================================== -->
+    --text-dark: #0F172A;
 
+    --text-light: #64748B;
 
-<header class="navbar">
+    --border: #E2E8F0;
 
+}
 
 
-<div class="brand">
 
+/* ==========================================================
+   GLOBAL
+========================================================== */
 
-    <img
 
-    src="images/appshelfhub-header.png"
+* {
 
-    alt="AppShelfHub Logo"
+    margin:0;
 
-    class="brand-logo"
+    padding:0;
 
-    >
+    box-sizing:border-box;
 
+}
 
 
-</div>
 
+body {
 
+    font-family:
+    "Segoe UI",
+    Arial,
+    sans-serif;
 
+    background:
+    var(--light-bg);
 
+    color:
+    var(--text-dark);
 
-<nav class="nav-links">
+}
 
 
-<a href="#">
 
-Home
+a {
 
-</a>
+    text-decoration:none;
 
+}
 
-<a href="#">
 
-Products
 
-</a>
+img {
 
+    max-width:100%;
 
-<a href="#">
+    display:block;
 
-Downloads
+}
 
-</a>
 
 
-<a href="#">
 
-About Us
 
-</a>
+/* ==========================================================
+   NAVBAR
+========================================================== */
 
 
-<a href="#">
+.navbar {
 
-Support
+    min-height:95px;
 
-</a>
+    background:
+    var(--dark-navy);
 
+    display:flex;
 
-<a href="#">
+    align-items:center;
 
-Contact
+    justify-content:space-between;
 
-</a>
+    padding:0 70px;
 
+    gap:30px;
 
-</nav>
+}
 
 
 
 
 
-<a class="download-btn" href="#">
+/* ==========================================================
+   APPSEELFHUB HEADER LOGO
+========================================================== */
 
 
-⬇ Download WinSysHelp
+.brand {
 
+    display:flex;
 
-</a>
+    align-items:center;
 
+    flex-shrink:0;
 
+}
 
-</header>
 
 
 
 
+.brand-logo {
 
+    width:280px;
 
+    height:auto;
 
-<!-- ==================================================
-     HERO SECTION
-================================================== -->
+    object-fit:contain;
 
+    filter:
 
-<section class="hero">
+    drop-shadow(
+        0 0 12px
+        rgba(34,197,94,0.45)
+    );
 
+}
 
 
-<div class="hero-left">
 
 
 
-<h1>
+/* ==========================================================
+   NAVIGATION LINKS
+========================================================== */
 
 
-A Better Way to
+.nav-links {
 
+    display:flex;
 
-<span>
+    align-items:center;
 
-Manage
+    gap:35px;
 
-</span>
+}
 
 
-Your PC
 
+.nav-links a {
 
-</h1>
+    color:#E2E8F0;
 
+    font-size:15px;
 
+    font-weight:600;
 
+}
 
 
-<p>
 
+.nav-links a:hover {
 
-Powerful, lightweight and easy-to-use applications
+    color:
 
-to clean, optimize and improve your Windows experience.
+    var(--bright-green);
 
+}
 
-</p>
 
 
 
 
+/* ==========================================================
+   DOWNLOAD BUTTON
+========================================================== */
 
-<a class="primary-btn" href="#">
 
+.download-btn {
 
-Explore Products
+    border:
 
+    1px solid
+    var(--bright-green);
 
-</a>
+    color:white;
 
+    padding:
 
+    12px 22px;
 
+    border-radius:8px;
 
+    font-weight:600;
 
-<a class="secondary-btn" href="#">
+    white-space:nowrap;
 
+}
 
-Learn More
 
 
-</a>
+.download-btn:hover {
 
+    background:
 
+    var(--bright-green);
 
+    color:white;
 
+}
 
-</div>
 
 
 
 
+/* ==========================================================
+   HERO SECTION
+========================================================== */
 
 
+.hero {
 
-<div class="hero-right">
+    background:
 
+    linear-gradient(
+        135deg,
+        #020617,
+        #052E16
+    );
 
+    color:white;
 
-<img
+    padding:
 
+    80px 70px;
 
-src="images/winsyshelp.png"
+    display:flex;
 
+    align-items:center;
 
-alt="WinSysHelp Application Screenshot"
+    gap:50px;
 
+}
 
-class="hero-image"
 
 
+.hero-left {
 
->
+    width:45%;
 
+}
 
 
-</div>
 
+.hero-right {
 
+    width:55%;
 
-</section>
+}
 
 
 
+.hero h1 {
 
+    font-size:52px;
 
+    line-height:1.1;
 
+    margin-bottom:25px;
 
-<!-- ==================================================
-     APPLICATIONS
-================================================== -->
+}
 
 
-<section class="apps-section">
 
+.hero h1 span {
 
+    color:
 
-<h2 class="section-title">
+    var(--bright-green);
 
+}
 
-Our <span>Applications</span>
 
 
-</h2>
+.hero p {
 
+    font-size:18px;
 
+    color:#CBD5E1;
 
+    line-height:1.7;
 
+    margin-bottom:35px;
 
-<p class="section-subtitle">
+}
 
 
-Simple, reliable and effective tools to make your digital life easier.
 
 
-</p>
 
+/* ==========================================================
+   HERO BUTTONS
+========================================================== */
 
 
+.primary-btn {
 
+    background:
 
-<div class="apps-container">
+    var(--bright-green);
 
+    color:white;
 
+    padding:
 
+    15px 28px;
 
+    border-radius:8px;
 
+    font-weight:700;
 
-<!-- WinSysHelp -->
+    margin-right:15px;
 
+    display:inline-block;
 
-<div class="app-card featured">
+}
 
 
 
-<span class="badge">
+.secondary-btn {
 
+    border:
 
-Featured
+    1px solid white;
 
+    color:white;
 
-</span>
+    padding:
 
+    15px 28px;
 
+    border-radius:8px;
 
+    display:inline-block;
 
+}
 
-<h3>
 
 
-WinSysHelp
+.primary-btn:hover {
 
+    background:
 
-</h3>
+    #16A34A;
 
+}
+/* ==========================================================
+   WINSYSHELP IMAGE
+========================================================== */
 
 
+.hero-image {
 
+    border-radius:18px;
 
-<p>
+    box-shadow:
 
+    0 20px 50px
+    rgba(0,0,0,0.4);
 
-Windows Cleaner & Optimizer
+}
 
 
-</p>
 
 
 
+/* ==========================================================
+   APPLICATION SECTION
+========================================================== */
 
 
-<p>
+.apps-section {
 
+    background:white;
 
-✓ Temp & Cache Cleaner<br>
+    padding:70px;
 
+}
 
-✓ Windows Update Cache Cleaner<br>
 
 
-✓ Prefetch Cleaner<br>
+.section-title {
 
+    text-align:center;
 
-✓ Recycle Bin Cleaner
+    font-size:36px;
 
+    font-weight:700;
 
-</p>
+}
 
 
 
+.section-title span {
 
+    color:
 
-<a class="primary-btn" href="#">
+    var(--bright-green);
 
+}
 
-Download Now
 
 
-</a>
+.section-subtitle {
 
+    text-align:center;
 
+    color:
 
+    var(--text-light);
 
-</div>
+    margin-top:10px;
 
+}
 
 
 
 
 
-<!-- Future App 1 -->
+/* ==========================================================
+   APPLICATION CARDS
+========================================================== */
 
 
-<div class="app-card">
+.apps-container {
 
+    display:flex;
 
+    gap:25px;
 
-<span class="badge coming">
+    margin-top:45px;
 
+}
 
-Coming Soon
 
 
-</span>
+.app-card {
 
+    background:white;
 
+    border:1px solid
 
+    var(--border);
 
+    border-radius:15px;
 
-<h3>
+    padding:25px;
 
+    flex:1;
 
-FileTool Pro
+    box-shadow:
 
+    0 8px 20px
+    rgba(0,0,0,0.05);
 
-</h3>
+    transition:0.3s;
 
+}
 
 
 
+.app-card:hover {
 
-<p>
+    transform:translateY(-5px);
 
+}
 
-Smart File Manager
 
 
-</p>
+.app-card h3 {
 
+    margin-bottom:10px;
 
+}
 
 
 
-<p>
+.featured {
 
+    border:
 
-Advanced file management tool
+    2px solid
 
-to organize, search and manage
+    var(--bright-green);
 
-your files easily.
+}
 
 
-</p>
 
+.badge {
 
+    background:
 
+    var(--green-light);
 
+    color:
 
-</div>
+    var(--dark-green);
 
+    padding:
 
+    5px 12px;
 
+    border-radius:20px;
 
+    font-size:12px;
 
+    font-weight:700;
 
+}
 
 
-<!-- Future App 2 -->
 
+.coming {
 
-<div class="app-card">
+    background:#EEF2FF;
 
+    color:#4338CA;
 
+}
 
-<span class="badge coming">
 
 
-Coming Soon
 
 
-</span>
+/* ==========================================================
+   FEATURES
+========================================================== */
 
 
+.features {
 
+    display:flex;
 
+    justify-content:center;
 
-<h3>
+    gap:40px;
 
+    padding:
 
-RegCare
+    35px 70px;
 
+    background:
 
-</h3>
+    #F0FDF4;
 
+}
 
 
 
+.feature-item {
 
-<p>
+    font-weight:600;
 
+}
 
-Windows Registry Cleaner
 
 
-</p>
 
 
+/* ==========================================================
+   FOOTER
+========================================================== */
 
 
+.footer {
 
-<p>
+    background:
 
+    var(--dark-navy);
 
-Clean and optimize Windows registry
+    color:white;
 
-safely to improve performance
+    text-align:center;
 
-and stability.
+    padding:25px;
 
+    font-size:14px;
 
-</p>
+}
 
 
 
 
 
-</div>
+/* ==========================================================
+   TABLET RESPONSIVE
+========================================================== */
 
 
+@media (max-width:1024px) {
 
 
 
-</div>
+    .navbar {
 
+        padding:
 
+        0 35px;
 
-</section>
+    }
 
 
 
+    .brand-logo {
 
+        width:230px;
 
+    }
 
 
 
+    .nav-links {
 
-<!-- ==================================================
-     FEATURES
-================================================== -->
+        gap:20px;
 
+    }
 
-<section class="features">
 
 
+    .hero {
 
+        padding:
 
+        60px 35px;
 
-<div class="feature-item">
+        gap:30px;
 
+    }
 
-🛡 Safe & Reliable
 
 
-</div>
+    .hero h1 {
 
+        font-size:42px;
 
+    }
 
 
 
-<div class="feature-item">
+    .apps-section {
 
+        padding:
 
-⚡ Lightweight
+        50px 35px;
 
+    }
 
-</div>
 
+}
 
 
 
 
-<div class="feature-item">
 
+/* ==========================================================
+   MOBILE RESPONSIVE
+========================================================== */
 
-👥 User Focused
 
+@media (max-width:768px) {
 
-</div>
 
 
+    .navbar {
 
+        flex-direction:column;
 
+        min-height:auto;
 
-<div class="feature-item">
+        padding:
 
+        25px 20px;
 
-🚀 Always Improving
+        gap:20px;
 
+    }
 
-</div>
 
 
+    .brand-logo {
 
+        width:230px;
 
+    }
 
-</section>
 
 
+    .nav-links {
 
+        flex-direction:column;
 
+        gap:15px;
 
+        text-align:center;
 
+    }
 
 
 
-<!-- ==================================================
-     FOOTER
-================================================== -->
+    .download-btn {
 
+        width:100%;
 
-<footer class="footer">
+        text-align:center;
 
+    }
 
 
-© 2026 AppShelfHub. All Rights Reserved.
 
 
 
-</footer>
+    .hero {
 
+        flex-direction:column;
 
+        text-align:center;
 
+        padding:
 
+        45px 20px;
 
+    }
 
 
-</body>
 
+    .hero-left,
 
-</html>
+    .hero-right {
+
+        width:100%;
+
+    }
+
+
+
+    .hero h1 {
+
+        font-size:36px;
+
+    }
+
+
+
+    .hero p {
+
+        font-size:16px;
+
+    }
+
+
+
+    .primary-btn,
+
+    .secondary-btn {
+
+        width:100%;
+
+        margin:8px 0;
+
+        text-align:center;
+
+    }
+
+
+
+    .hero-image {
+
+        margin-top:25px;
+
+    }
+
+
+
+
+
+    .apps-section {
+
+        padding:
+
+        45px 20px;
+
+    }
+
+
+
+    .section-title {
+
+        font-size:30px;
+
+    }
+
+
+
+    .apps-container {
+
+        flex-direction:column;
+
+    }
+
+
+
+
+
+    .features {
+
+        flex-direction:column;
+
+        align-items:center;
+
+        gap:20px;
+
+        padding:
+
+        30px 20px;
+
+        text-align:center;
+
+    }
+
+
+
+    .footer {
+
+        padding:20px;
+
+    }
+
+
+}
