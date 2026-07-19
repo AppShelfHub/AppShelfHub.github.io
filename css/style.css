@@ -84,6 +84,8 @@ img {
 
 
 
+
+
 /* ==========================================================
    NAVBAR
 ========================================================== */
@@ -91,7 +93,7 @@ img {
 
 .navbar {
 
-    min-height:80px;
+    min-height:95px;
 
     background:
     var(--dark-navy);
@@ -110,8 +112,10 @@ img {
 
 
 
+
+
 /* ==========================================================
-   APPSEELFHUB BRAND LOGO
+   APPSEELFHUB HEADER LOGO
 ========================================================== */
 
 
@@ -121,22 +125,19 @@ img {
 
     align-items:center;
 
-    gap:14px;
-
     flex-shrink:0;
 
 }
 
 
 
-/* Real Logo Image */
 
 
 .brand-logo {
 
-    width:62px;
+    width:280px;
 
-    height:62px;
+    height:auto;
 
     object-fit:contain;
 
@@ -150,55 +151,6 @@ img {
 }
 
 
-
-.brand-text {
-
-    display:flex;
-
-    flex-direction:column;
-
-}
-
-
-
-.brand-name {
-
-    color:white;
-
-    font-size:26px;
-
-    font-weight:700;
-
-    line-height:1;
-
-    white-space:nowrap;
-
-}
-
-
-
-.brand-name span {
-
-    color:
-    var(--bright-green);
-
-}
-
-
-
-.brand-tagline {
-
-    color:#CBD5E1;
-
-    font-size:11px;
-
-    margin-top:6px;
-
-    letter-spacing:0.4px;
-
-    white-space:nowrap;
-
-}
 
 
 
@@ -234,9 +186,12 @@ img {
 .nav-links a:hover {
 
     color:
+
     var(--bright-green);
 
 }
+
+
 
 
 
@@ -254,7 +209,9 @@ img {
 
     color:white;
 
-    padding:12px 22px;
+    padding:
+
+    12px 22px;
 
     border-radius:8px;
 
@@ -269,11 +226,14 @@ img {
 .download-btn:hover {
 
     background:
+
     var(--bright-green);
 
     color:white;
 
 }
+
+
 
 
 
@@ -339,6 +299,7 @@ img {
 .hero h1 span {
 
     color:
+
     var(--bright-green);
 
 }
@@ -359,6 +320,8 @@ img {
 
 
 
+
+
 /* ==========================================================
    HERO BUTTONS
 ========================================================== */
@@ -372,7 +335,9 @@ img {
 
     color:white;
 
-    padding:15px 28px;
+    padding:
+
+    15px 28px;
 
     border-radius:8px;
 
@@ -394,7 +359,9 @@ img {
 
     color:white;
 
-    padding:15px 28px;
+    padding:
+
+    15px 28px;
 
     border-radius:8px;
 
@@ -429,6 +396,8 @@ img {
 
 
 
+
+
 /* ==========================================================
    APPLICATION SECTION
 ========================================================== */
@@ -459,6 +428,7 @@ img {
 .section-title span {
 
     color:
+
     var(--bright-green);
 
 }
@@ -470,11 +440,14 @@ img {
     text-align:center;
 
     color:
+
     var(--text-light);
 
     margin-top:10px;
 
 }
+
+
 
 
 
@@ -500,6 +473,7 @@ img {
     background:white;
 
     border:1px solid
+
     var(--border);
 
     border-radius:15px;
@@ -540,6 +514,7 @@ img {
     border:
 
     2px solid
+
     var(--bright-green);
 
 }
@@ -556,7 +531,9 @@ img {
 
     var(--dark-green);
 
-    padding:5px 12px;
+    padding:
+
+    5px 12px;
 
     border-radius:20px;
 
@@ -578,6 +555,8 @@ img {
 
 
 
+
+
 /* ==========================================================
    FEATURES
 ========================================================== */
@@ -591,7 +570,9 @@ img {
 
     gap:40px;
 
-    padding:35px 70px;
+    padding:
+
+    35px 70px;
 
     background:
 
@@ -606,6 +587,8 @@ img {
     font-weight:600;
 
 }
+
+
 
 
 
@@ -635,16 +618,27 @@ img {
 
 
 /* ==========================================================
-   TABLET RESPONSIVE DESIGN
+   TABLET RESPONSIVE
 ========================================================== */
 
 
 @media (max-width:1024px) {
 
 
+
     .navbar {
 
-        padding:0 35px;
+        padding:
+
+        0 35px;
+
+    }
+
+
+
+    .brand-logo {
+
+        width:230px;
 
     }
 
@@ -660,7 +654,9 @@ img {
 
     .hero {
 
-        padding:60px 35px;
+        padding:
+
+        60px 35px;
 
         gap:30px;
 
@@ -678,7 +674,9 @@ img {
 
     .apps-section {
 
-        padding:50px 35px;
+        padding:
+
+        50px 35px;
 
     }
 
@@ -690,7 +688,7 @@ img {
 
 
 /* ==========================================================
-   MOBILE RESPONSIVE DESIGN
+   MOBILE RESPONSIVE
 ========================================================== */
 
 
@@ -702,9 +700,11 @@ img {
 
         flex-direction:column;
 
-        height:auto;
+        min-height:auto;
 
-        padding:25px 20px;
+        padding:
+
+        25px 20px;
 
         gap:20px;
 
@@ -712,35 +712,9 @@ img {
 
 
 
-    .brand {
-
-        justify-content:center;
-
-    }
-
-
-
     .brand-logo {
 
-        width:55px;
-
-        height:55px;
-
-    }
-
-
-
-    .brand-name {
-
-        font-size:22px;
-
-    }
-
-
-
-    .brand-tagline {
-
-        font-size:10px;
+        width:230px;
 
     }
 
@@ -774,15 +748,18 @@ img {
 
         flex-direction:column;
 
-        padding:45px 20px;
-
         text-align:center;
+
+        padding:
+
+        45px 20px;
 
     }
 
 
 
     .hero-left,
+
     .hero-right {
 
         width:100%;
@@ -808,6 +785,7 @@ img {
 
 
     .primary-btn,
+
     .secondary-btn {
 
         width:100%;
@@ -832,7 +810,9 @@ img {
 
     .apps-section {
 
-        padding:45px 20px;
+        padding:
+
+        45px 20px;
 
     }
 
@@ -864,7 +844,9 @@ img {
 
         gap:20px;
 
-        padding:30px 20px;
+        padding:
+
+        30px 20px;
 
         text-align:center;
 
