@@ -327,7 +327,7 @@ img {
 
     padding:
 
-    65px 45px;
+    65px 45px 120px;
 
     display:flex;
 
@@ -335,13 +335,63 @@ img {
 
     gap:45px;
 
+    position:relative;
+
+    overflow:hidden;
+
 }
+
+
+
+
+
+/* ==========================================================
+   HERO BOTTOM CURVE + GREEN GRADIENT EFFECT
+========================================================== */
+
+
+.hero::after {
+
+    content:"";
+
+    position:absolute;
+
+    bottom:-80px;
+
+    left:-5%;
+
+    width:110%;
+
+    height:150px;
+
+    background:
+
+    linear-gradient(
+        90deg,
+        #020617,
+        #052E16,
+        #14532D
+    );
+
+    border-radius:
+
+    50% 50% 0 0;
+
+    z-index:1;
+
+}
+
+
 
 
 
 .hero-left {
 
     width:45%;
+
+    position:relative;
+
+    z-index:2;
 
 }
 
@@ -350,6 +400,10 @@ img {
 .hero-right {
 
     width:55%;
+
+    position:relative;
+
+    z-index:2;
 
 }
 
@@ -449,6 +503,8 @@ img {
     #16A34A;
 
 }
+
+
 /* ==========================================================
    WINSYSHELP IMAGE
 ========================================================== */
@@ -464,11 +520,6 @@ img {
     rgba(0,0,0,0.4);
 
 }
-
-
-
-
-
 /* ==========================================================
    APPLICATION SECTION
 ========================================================== */
@@ -729,9 +780,19 @@ img {
 
         padding:
 
-        55px 30px;
+        55px 30px 100px;
 
         gap:30px;
+
+    }
+
+
+
+    .hero::after {
+
+        height:120px;
+
+        bottom:-65px;
 
     }
 
@@ -833,7 +894,17 @@ img {
 
         padding:
 
-        45px 20px;
+        45px 20px 90px;
+
+    }
+
+
+
+    .hero::after {
+
+        height:80px;
+
+        bottom:-40px;
 
     }
 
