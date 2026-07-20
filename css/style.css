@@ -444,6 +444,27 @@ img {
     margin-bottom:35px;
 
 }
+
+
+
+/* ==========================================================
+   HERO TAGLINE
+========================================================== */
+
+
+.hero-tagline {
+
+    display:inline-block;
+
+    font-size:24px;
+
+    font-weight:600;
+
+    color:white;
+
+    line-height:1.4;
+
+}
 /* ==========================================================
    HERO BUTTONS
 ========================================================== */
@@ -815,6 +836,14 @@ img {
 
 
 
+    .hero-tagline {
+
+        font-size:22px;
+
+    }
+
+
+
     .apps-section {
 
         padding:
@@ -946,6 +975,14 @@ img {
     .hero p {
 
         font-size:16px;
+
+    }
+
+
+
+    .hero-tagline {
+
+        font-size:21px;
 
     }
 
