@@ -1710,11 +1710,25 @@ img {
 
 
 
-.about-hero h1 span {
+.about-hero h1 .brand-app {
 
-    color:
+    color:#FFFFFF;
 
-    #84CC16;
+}
+
+
+
+.about-hero h1 .brand-shelf {
+
+    color:#84CC16;
+
+}
+
+
+
+.about-hero h1 .brand-hub {
+
+    color:#0EA5E9;
 
 }
 
