@@ -96,6 +96,7 @@ img {
     height:100px;
 
     background:
+
     var(--dark-navy);
 
     display:flex;
@@ -119,7 +120,7 @@ img {
 
 
 /* ==========================================================
-   NAVBAR PURPLE TO BLUE GLOW - OPTION 3
+   NAVBAR SOFT GREEN GLOW
 ========================================================== */
 
 
@@ -143,18 +144,17 @@ img {
     linear-gradient(
         90deg,
         transparent,
-        #A855F7,
-        #7C3AED,
-        #2563EB,
-        #38BDF8,
+        #22C55E,
+        #4ADE80,
+        #22C55E,
         transparent
     );
 
 
     box-shadow:
 
-    0 0 14px
-    rgba(124,58,237,0.9);
+    0 0 10px
+    rgba(34,197,94,0.45);
 
 
     animation:
@@ -177,7 +177,7 @@ img {
 
     50% {
 
-        opacity:1;
+        opacity:0.8;
 
     }
 
@@ -327,7 +327,7 @@ img {
 
     padding:
 
-    65px 45px 140px;
+    65px 45px 95px;
 
     display:flex;
 
@@ -346,7 +346,7 @@ img {
 
 
 /* ==========================================================
-   HERO WAVE TRANSITION
+   HERO INTERNAL BOTTOM GLOW
 ========================================================== */
 
 
@@ -356,28 +356,28 @@ img {
 
     position:absolute;
 
-    left:-5%;
+    left:10%;
 
-    bottom:-95px;
+    bottom:20px;
 
-    width:110%;
+    width:80%;
 
-    height:160px;
+    height:35px;
+
 
     background:
 
     linear-gradient(
         90deg,
-        #020617,
-        #052E16,
-        #14532D
+        transparent,
+        rgba(34,197,94,0.55),
+        rgba(74,222,128,0.7),
+        rgba(34,197,94,0.55),
+        transparent
     );
 
 
-    border-radius:
-
-    50% 50% 0 0;
-
+    filter:blur(22px);
 
     z-index:1;
 
@@ -785,7 +785,7 @@ img {
 
         padding:
 
-        55px 30px 120px;
+        55px 30px 80px;
 
         gap:30px;
 
@@ -795,9 +795,13 @@ img {
 
     .hero::after {
 
-        height:130px;
+        left:8%;
 
-        bottom:-75px;
+        width:84%;
+
+        bottom:18px;
+
+        height:30px;
 
     }
 
@@ -899,7 +903,7 @@ img {
 
         padding:
 
-        45px 20px 100px;
+        45px 20px 70px;
 
     }
 
@@ -907,9 +911,15 @@ img {
 
     .hero::after {
 
-        height:90px;
+        left:5%;
 
-        bottom:-45px;
+        width:90%;
+
+        bottom:15px;
+
+        height:25px;
+
+        filter:blur(18px);
 
     }
 
