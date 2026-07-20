@@ -449,6 +449,8 @@ img {
 
 
 
+
+
 /* ==========================================================
    HERO TAGLINE
 ========================================================== */
@@ -456,15 +458,29 @@ img {
 
 .hero-tagline {
 
-    display:inline-block;
+    display:block;
 
-    font-size:24px;
+    font-size:26px;
 
     font-weight:600;
 
     color:white;
 
     line-height:1.4;
+
+    white-space:nowrap;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.highlight-text {
+
+    color:var(--bright-green);
+
+    font-weight:800;
 
 }
 /* ==========================================================
@@ -844,6 +860,8 @@ img {
 
         font-size:22px;
 
+        white-space:normal;
+
     }
 
 
@@ -989,6 +1007,18 @@ img {
     .hero-tagline {
 
         font-size:21px;
+
+        white-space:normal;
+
+        margin-bottom:20px;
+
+    }
+
+
+
+    .highlight-text {
+
+        font-weight:800;
 
     }
 
