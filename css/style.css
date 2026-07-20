@@ -327,7 +327,7 @@ img {
 
     padding:
 
-    65px 45px 120px;
+    65px 45px 140px;
 
     display:flex;
 
@@ -346,7 +346,7 @@ img {
 
 
 /* ==========================================================
-   HERO BOTTOM CURVE + GREEN GRADIENT EFFECT
+   HERO WAVE TRANSITION
 ========================================================== */
 
 
@@ -356,13 +356,13 @@ img {
 
     position:absolute;
 
-    bottom:-80px;
-
     left:-5%;
+
+    bottom:-95px;
 
     width:110%;
 
-    height:150px;
+    height:160px;
 
     background:
 
@@ -373,9 +373,11 @@ img {
         #14532D
     );
 
+
     border-radius:
 
     50% 50% 0 0;
+
 
     z-index:1;
 
@@ -442,11 +444,6 @@ img {
     margin-bottom:35px;
 
 }
-
-
-
-
-
 /* ==========================================================
    HERO BUTTONS
 ========================================================== */
@@ -505,6 +502,9 @@ img {
 }
 
 
+
+
+
 /* ==========================================================
    WINSYSHELP IMAGE
 ========================================================== */
@@ -520,6 +520,11 @@ img {
     rgba(0,0,0,0.4);
 
 }
+
+
+
+
+
 /* ==========================================================
    APPLICATION SECTION
 ========================================================== */
@@ -780,7 +785,7 @@ img {
 
         padding:
 
-        55px 30px 100px;
+        55px 30px 120px;
 
         gap:30px;
 
@@ -790,9 +795,9 @@ img {
 
     .hero::after {
 
-        height:120px;
+        height:130px;
 
-        bottom:-65px;
+        bottom:-75px;
 
     }
 
@@ -894,7 +899,7 @@ img {
 
         padding:
 
-        45px 20px 90px;
+        45px 20px 100px;
 
     }
 
@@ -902,9 +907,9 @@ img {
 
     .hero::after {
 
-        height:80px;
+        height:90px;
 
-        bottom:-40px;
+        bottom:-45px;
 
     }
 
