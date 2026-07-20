@@ -1628,4 +1628,490 @@ img {
 
 }
 
+/* ==========================================================
+   ABOUT PAGE - HERO SECTION
+========================================================== */
 
+
+.about-hero {
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #020617,
+        #052E16
+    );
+
+    color:white;
+
+    text-align:center;
+
+    padding:
+
+    65px 30px 55px;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+
+
+
+.about-hero::after {
+
+    content:"";
+
+    position:absolute;
+
+    bottom:15px;
+
+    left:15%;
+
+    width:70%;
+
+    height:25px;
+
+
+    background:
+
+    linear-gradient(
+        90deg,
+        transparent,
+        rgba(34,197,94,0.45),
+        rgba(74,222,128,0.9),
+        rgba(34,197,94,0.45),
+        transparent
+    );
+
+
+    filter:blur(22px);
+
+}
+
+
+
+
+
+.about-hero h1 {
+
+    font-size:48px;
+
+    line-height:1.2;
+
+    margin-bottom:18px;
+
+}
+
+
+
+
+
+.about-hero h1 span {
+
+    color:
+
+    #84CC16;
+
+}
+
+
+
+
+
+.about-hero p {
+
+    max-width:750px;
+
+    margin:10px auto;
+
+    color:#CBD5E1;
+
+    font-size:18px;
+
+    line-height:1.7;
+
+}
+
+
+
+
+
+
+
+/* ==========================================================
+   ABOUT CARDS SECTION
+========================================================== */
+
+
+.about-section {
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #020617,
+        #052E16
+    );
+
+    padding:
+
+    55px 45px 80px;
+
+}
+
+
+
+
+
+.about-container {
+
+    max-width:1200px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(4,1fr);
+
+    gap:25px;
+
+}
+
+
+
+
+
+
+
+/* ==========================================================
+   GLASS CARDS
+========================================================== */
+
+
+.about-card {
+
+    background:
+
+    rgba(255,255,255,0.06);
+
+
+    backdrop-filter:
+
+    blur(14px);
+
+
+    border:
+
+    1px solid
+
+    rgba(132,204,22,0.25);
+
+
+    border-radius:18px;
+
+
+    padding:
+
+    30px 25px;
+
+
+    text-align:center;
+
+
+    position:relative;
+
+
+    overflow:hidden;
+
+
+    transition:0.3s;
+
+
+}
+
+
+
+
+
+.about-card::after {
+
+    content:"";
+
+    position:absolute;
+
+    bottom:-20px;
+
+    left:15%;
+
+    width:70%;
+
+    height:25px;
+
+
+    background:
+
+    rgba(132,204,22,0.35);
+
+
+    filter:blur(20px);
+
+}
+
+
+
+
+
+.about-card:hover {
+
+    transform:
+
+    translateY(-6px);
+
+
+    border-color:
+
+    rgba(132,204,22,0.7);
+
+}
+
+
+
+
+
+/* ==========================================================
+   ICON CIRCLE
+========================================================== */
+
+
+.about-icon {
+
+    width:75px;
+
+    height:75px;
+
+    margin:
+
+    0 auto 22px;
+
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+
+    border-radius:50%;
+
+
+    background:
+
+    rgba(132,204,22,0.08);
+
+
+    border:
+
+    1px solid
+
+    rgba(132,204,22,0.35);
+
+
+    box-shadow:
+
+    0 0 25px
+
+    rgba(132,204,22,0.18);
+
+}
+
+
+
+
+
+.about-icon img {
+
+    width:42px;
+
+    height:42px;
+
+    object-fit:contain;
+
+}
+
+/* ==========================================================
+   ABOUT CARD TEXT
+========================================================== */
+
+
+.about-card h2 {
+
+    color:white;
+
+    font-size:22px;
+
+    margin-bottom:15px;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+
+
+
+
+.about-card p {
+
+    color:#CBD5E1;
+
+    font-size:15px;
+
+    line-height:1.7;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+
+
+
+
+
+
+/* ==========================================================
+   ABOUT PAGE RESPONSIVE
+========================================================== */
+
+
+/* TABLET */
+
+@media (max-width:1024px) {
+
+
+    .about-container {
+
+        grid-template-columns:
+
+        repeat(2,1fr);
+
+    }
+
+
+    .about-hero h1 {
+
+        font-size:42px;
+
+    }
+
+
+}
+
+
+
+
+
+
+
+/* MOBILE */
+
+@media (max-width:768px) {
+
+
+
+    .about-hero {
+
+        padding:
+
+        45px 20px 40px;
+
+    }
+
+
+
+    .about-hero h1 {
+
+        font-size:36px;
+
+    }
+
+
+
+    .about-hero p {
+
+        font-size:16px;
+
+    }
+
+
+
+
+
+    .about-section {
+
+        padding:
+
+        35px 20px 60px;
+
+    }
+
+
+
+
+
+    .about-container {
+
+        grid-template-columns:
+
+        1fr;
+
+        gap:20px;
+
+    }
+
+
+
+
+
+    .about-card {
+
+        padding:
+
+        28px 22px;
+
+    }
+
+
+
+
+
+    .about-icon {
+
+        width:70px;
+
+        height:70px;
+
+    }
+
+
+
+
+
+    .about-icon img {
+
+        width:38px;
+
+        height:38px;
+
+    }
+
+
+}
