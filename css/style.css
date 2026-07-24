@@ -1,3 +1,5 @@
+
+
 /* ==========================================================
    AppShelfHub Website Style
    Professional Software Landing Page
@@ -154,7 +156,6 @@ img {
     box-shadow:
 
     0 0 10px
-
     rgba(34,197,94,0.45);
 
 
@@ -222,6 +223,10 @@ img {
 
 }
 
+
+
+
+
 /* ==========================================================
    NAVIGATION LINKS
 ========================================================== */
@@ -273,7 +278,6 @@ img {
     border:
 
     1px solid
-
     var(--bright-green);
 
     color:white;
@@ -409,60 +413,6 @@ img {
 
 
 
-
-
-/* ==========================================================
-   WINSYSHELP TITLE
-========================================================== */
-
-
-.winsyshelp-title {
-
-    font-size:52px;
-
-    font-weight:800;
-
-    letter-spacing:1px;
-
-    margin-bottom:18px;
-
-    color:#FFFFFF;
-
-    line-height:1.1;
-
-    font-family:
-
-    "Segoe UI",
-
-    Arial,
-
-    sans-serif;
-
-    background:
-
-    linear-gradient(
-        90deg,
-        #FFFFFF,
-        #84CC16
-    );
-
-    -webkit-background-clip:text;
-
-    -webkit-text-fill-color:transparent;
-
-    display:inline-block;
-
-}
-
-
-
-
-
-/* ==========================================================
-   HERO HEADING
-========================================================== */
-
-
 .hero h1 {
 
     font-size:48px;
@@ -499,6 +449,10 @@ img {
 
 }
 
+
+
+
+
 /* ==========================================================
    HERO TAGLINE
 ========================================================== */
@@ -526,18 +480,11 @@ img {
 
 .highlight-text {
 
-    color:
-
-    var(--bright-green);
+    color:var(--bright-green);
 
     font-weight:800;
 
 }
-
-
-
-
-
 /* ==========================================================
    HERO BUTTONS
 ========================================================== */
@@ -571,9 +518,7 @@ img {
 
     border:
 
-    1px solid
-
-    white;
+    1px solid white;
 
     color:white;
 
@@ -602,7 +547,7 @@ img {
 
 
 /* ==========================================================
-   WINSYSHELP APPLICATION IMAGE
+   WINSYSHELP IMAGE
 ========================================================== */
 
 
@@ -613,7 +558,6 @@ img {
     box-shadow:
 
     0 20px 50px
-
     rgba(0,0,0,0.4);
 
 }
@@ -629,13 +573,9 @@ img {
 
 .apps-section {
 
-    background:
+    background:white;
 
-    white;
-
-    padding:
-
-    70px 50px;
+    padding:70px 50px;
 
 }
 
@@ -698,13 +638,9 @@ img {
 
 .app-card {
 
-    background:
+    background:white;
 
-    white;
-
-    border:
-
-    1px solid
+    border:1px solid
 
     var(--border);
 
@@ -717,7 +653,6 @@ img {
     box-shadow:
 
     0 8px 20px
-
     rgba(0,0,0,0.05);
 
     transition:0.3s;
@@ -728,9 +663,7 @@ img {
 
 .app-card:hover {
 
-    transform:
-
-    translateY(-5px);
+    transform:translateY(-5px);
 
 }
 
@@ -742,9 +675,6 @@ img {
 
 }
 
-/* ==========================================================
-   APPLICATION CARDS CONTINUED
-========================================================== */
 
 
 .featured {
@@ -785,13 +715,9 @@ img {
 
 .coming {
 
-    background:
+    background:#EEF2FF;
 
-    #EEF2FF;
-
-    color:
-
-    #4338CA;
+    color:#4338CA;
 
 }
 
@@ -932,14 +858,6 @@ img {
 
 
 
-    .winsyshelp-title {
-
-        font-size:44px;
-
-    }
-
-
-
     .hero-tagline {
 
         font-size:22px;
@@ -960,6 +878,10 @@ img {
 
 
 }
+
+
+
+
 
 /* ==========================================================
    MOBILE RESPONSIVE
@@ -1063,20 +985,6 @@ img {
         width:100%;
 
     }
-
-
-
-
-
-    .winsyshelp-title {
-
-        font-size:38px;
-
-        margin-bottom:15px;
-
-    }
-
-
 
 
 
@@ -1202,7 +1110,6 @@ img {
  Contact Form
 ========================================================== */
 
-
 /* ==========================================================
    CONTACT PAGE - GLASSMORPHISM DESIGN
 ========================================================== */
@@ -1237,9 +1144,6 @@ img {
 
 }
 
-/* ==========================================================
-   CONTACT HERO CONTINUED
-========================================================== */
 
 
 .contact-hero::after {
@@ -1895,6 +1799,12 @@ img {
 
 }
 
+
+
+
+
+
+
 /* ==========================================================
    GLASS CARDS
 ========================================================== */
@@ -2050,10 +1960,6 @@ img {
 
 }
 
-
-
-
-
 /* ==========================================================
    ABOUT CARD TEXT
 ========================================================== */
@@ -2090,6 +1996,12 @@ img {
     z-index:2;
 
 }
+
+
+
+
+
+
 
 /* ==========================================================
    ABOUT PAGE RESPONSIVE
