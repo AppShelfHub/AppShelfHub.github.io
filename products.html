@@ -344,7 +344,194 @@ Learn more about WinSysHelp features and cleanup options in the <strong>About</s
 
 </footer>
 
+<script>
 
+const products = [
+
+{
+    image: "images/products/winsyshelp-dashboard.png",
+    title: "Dashboard",
+    subtitle: "Windows Cleanup Utility",
+    description:
+    "Clean and manage unnecessary files from Temp folders, Windows Temp, Prefetch files, Recycle Bin, and Windows Update Cache older than 7 days.",
+    points: [
+        "✓ Remove unwanted files",
+        "✓ Recover available storage space",
+        "✓ Perform System Cleanup Tasks"
+    ],
+    note:
+    "Learn more about WinSysHelp features and cleanup options in the About section of the application."
+},
+
+
+{
+    image: "images/products/winsyshelp-report.png",
+    title: "Report",
+    subtitle: "Detailed Cleaning Report",
+    description:
+    "View a complete summary of cleanup activities with file names, sizes, and locations after every cleanup operation.",
+    points: [
+        "✓ Track cleaned items",
+        "✓ View file details and locations",
+        "✓ Review cleanup activity"
+    ],
+    note:
+    "Review previous cleanup details from the Report section of the application."
+},
+
+
+{
+    image: "images/products/winsyshelp-browser-cleanup.png",
+    title: "Browser Cleanup",
+    subtitle: "Manage Browser Data",
+    description:
+    "Clean cache files, cookies, browsing history, and temporary internet files based on selected preferences.",
+    points: [
+        "✓ Clean Cache, Cookies, History and Temporary Files",
+        "✓ Control Browser Cleanup Options"
+    ],
+    note:
+    "Choose the cleanup options according to your requirements."
+},
+
+
+{
+    image: "images/products/winsyshelp-large-file-finder.png",
+    title: "Large File Finder",
+    subtitle: "Find Space-Consuming Files",
+    description:
+    "Locate large files occupying storage space by scanning files based on selected sizes such as 100 MB, 500 MB, 1 GB, 5 GB, and 10 GB.",
+    points: [
+        "✓ Find large files easily",
+        "✓ View file details",
+        "✓ Open selected file location"
+    ],
+    note:
+    "Select a result and open its location directly from the application."
+},
+
+
+{
+    image: "images/products/winsyshelp-system-information.png",
+    title: "System Information",
+    subtitle: "Know Your System Better",
+    description:
+    "View essential details about your computer including operating system, version, architecture, processor, memory, user account, and system uptime.",
+    points: [
+        "✓ View system details",
+        "✓ Check hardware information",
+        "✓ Understand your PC configuration"
+    ],
+    note:
+    "View important system information available on your computer."
+}
+
+];
+
+
+let currentProduct = 0;
+
+
+const image =
+document.querySelector(".product-slide-image");
+
+const title =
+document.querySelector(".product-info-card h2");
+
+const subtitle =
+document.querySelector(".product-info-card h3");
+
+const description =
+document.querySelector(".product-info-card p");
+
+const points =
+document.querySelector(".product-points");
+
+const note =
+document.querySelector(".product-note");
+
+
+
+function showProduct(index) {
+
+
+    const product = products[index];
+
+
+    image.src = product.image;
+
+    title.textContent = product.title;
+
+    subtitle.textContent = product.subtitle;
+
+    description.textContent = product.description;
+
+
+    points.innerHTML = "";
+
+
+    product.points.forEach(function(item){
+
+        const div = document.createElement("div");
+
+        div.textContent = item;
+
+        points.appendChild(div);
+
+    });
+
+
+    note.textContent = product.note;
+
+}
+
+
+
+document.querySelectorAll(".slider-arrow")[0]
+.addEventListener("click", function(){
+
+
+    currentProduct--;
+
+
+    if(currentProduct < 0){
+
+        currentProduct = products.length - 1;
+
+    }
+
+
+    showProduct(currentProduct);
+
+
+});
+
+
+
+
+
+document.querySelectorAll(".slider-arrow")[1]
+.addEventListener("click", function(){
+
+
+    currentProduct++;
+
+
+    if(currentProduct >= products.length){
+
+        currentProduct = 0;
+
+    }
+
+
+    showProduct(currentProduct);
+
+
+});
+
+
+
+</script>
 
 
 
