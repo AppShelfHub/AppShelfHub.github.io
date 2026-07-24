@@ -2131,3 +2131,472 @@ img {
 
 
 }
+
+
+/* ==========================================================
+   PRODUCTS PAGE
+   CLEAN CARD SLIDER
+========================================================== */
+
+
+/* ==========================================================
+   PRODUCTS HERO
+========================================================== */
+
+
+.products-hero {
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #020617,
+        #052E16
+    );
+
+    color:white;
+
+    text-align:center;
+
+    padding:
+
+    55px 30px 45px;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+
+.products-hero::after {
+
+    content:"";
+
+    position:absolute;
+
+    bottom:15px;
+
+    left:15%;
+
+    width:70%;
+
+    height:25px;
+
+
+    background:
+
+    linear-gradient(
+        90deg,
+        transparent,
+        rgba(34,197,94,0.45),
+        rgba(74,222,128,0.8),
+        rgba(34,197,94,0.45),
+        transparent
+    );
+
+
+    filter:blur(20px);
+
+}
+
+
+
+.products-hero h1 {
+
+    font-size:48px;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.products-hero h1 span {
+
+    color:
+
+    var(--bright-green);
+
+}
+
+
+
+.products-hero p {
+
+    color:#CBD5E1;
+
+    font-size:18px;
+
+}
+
+
+
+
+
+/* ==========================================================
+   PRODUCT SLIDER SECTION
+========================================================== */
+
+
+.product-slider-section {
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #020617,
+        #052E16
+    );
+
+    padding:
+
+    60px 45px 80px;
+
+}
+
+
+
+
+
+.product-slider-container {
+
+    max-width:1200px;
+
+    margin:auto;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:40px;
+
+}
+
+
+
+
+
+/* ==========================================================
+   PRODUCT IMAGE CARD
+========================================================== */
+
+
+.product-image-card {
+
+    width:55%;
+
+    background:
+
+    rgba(255,255,255,0.06);
+
+    backdrop-filter:
+
+    blur(14px);
+
+    border:
+
+    1px solid
+
+    rgba(34,197,94,0.25);
+
+    border-radius:18px;
+
+    padding:25px;
+
+    box-shadow:
+
+    0 20px 40px
+
+    rgba(0,0,0,0.35);
+
+}
+
+
+
+
+
+.product-slide-image {
+
+    width:100%;
+
+    border-radius:12px;
+
+}
+
+
+
+
+
+/* ==========================================================
+   PRODUCT INFORMATION CARD
+========================================================== */
+
+
+.product-info-card {
+
+    width:45%;
+
+    color:white;
+
+}
+
+
+
+
+
+.product-info-card h2 {
+
+    font-size:36px;
+
+    margin-bottom:10px;
+
+}
+
+
+
+.product-info-card h3 {
+
+    color:
+
+    var(--bright-green);
+
+    font-size:22px;
+
+    margin-bottom:18px;
+
+}
+
+
+
+.product-info-card p {
+
+    color:#CBD5E1;
+
+    font-size:16px;
+
+    line-height:1.7;
+
+}
+
+
+
+
+
+.product-points {
+
+    margin-top:25px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+
+
+.product-points div {
+
+    color:white;
+
+    margin-bottom:12px;
+
+    font-weight:600;
+
+}
+
+
+
+
+
+.product-note {
+
+    font-size:14px !important;
+
+    color:#94A3B8 !important;
+
+}
+
+
+
+
+
+/* ==========================================================
+   SLIDER ARROWS
+========================================================== */
+
+
+.slider-buttons {
+
+    display:flex;
+
+    gap:15px;
+
+    margin-top:30px;
+
+}
+
+
+
+
+
+.slider-arrow {
+
+    width:45px;
+
+    height:45px;
+
+    border-radius:50%;
+
+    border:
+
+    1px solid
+
+    var(--bright-green);
+
+    background:
+
+    transparent;
+
+    color:white;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+}
+
+
+
+
+
+.slider-arrow:hover {
+
+    background:
+
+    var(--bright-green);
+
+}
+
+
+
+
+
+/* ==========================================================
+   PRODUCTS RESPONSIVE
+========================================================== */
+
+
+@media (max-width:1024px) {
+
+
+
+    .product-slider-container {
+
+        gap:25px;
+
+    }
+
+
+
+    .product-info-card h2 {
+
+        font-size:32px;
+
+    }
+
+
+
+}
+
+
+
+
+
+
+
+@media (max-width:768px) {
+
+
+
+    .products-hero {
+
+        padding:
+
+        45px 20px;
+
+    }
+
+
+
+    .products-hero h1 {
+
+        font-size:36px;
+
+    }
+
+
+
+    .products-hero p {
+
+        font-size:16px;
+
+    }
+
+
+
+
+
+    .product-slider-section {
+
+        padding:
+
+        40px 20px 60px;
+
+    }
+
+
+
+
+
+    .product-slider-container {
+
+        flex-direction:column;
+
+    }
+
+
+
+
+
+    .product-image-card,
+
+    .product-info-card {
+
+        width:100%;
+
+    }
+
+
+
+
+
+    .product-info-card {
+
+        text-align:center;
+
+    }
+
+
+
+
+
+    .slider-buttons {
+
+        justify-content:center;
+
+    }
+
+
+}
